@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <div class="container">
+        <div class="tituloSubtitulo" >
+          <h2 class="titulo">App de gastos compartidos</h2>
+          <h4 class="subtitulo">Ingresa cuánto dinero pagó cada persona</h4>
+        </div>
+        <div class="ingresos" >
+          <input required placeholder="Ingresa el nombre" id="nombre" />
+          <input required placeholder="Ingresa el monto" type="number" id="monto" />
+        </div>
+        <div>
+          <button class="botoncito" onclick="sumarPlata()">Enviar</button>
+        </div>
+        <div class="creaciones" id="respuesta">
+
+        </div>
+        <div class="mostrado">
+          <p id="total">Total:</p>
+          <p id="cadaUno">Cada uno debería pagar:</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
